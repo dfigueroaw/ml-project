@@ -2,16 +2,16 @@ import base64
 import json
 from pathlib import Path
 
-NB_PATH = Path(__file__).parent / "eda.ipynb"
-OUT_DIR = Path(__file__).parent / "figures"
+NB_PATH = Path(__file__).parent.parent / "notebooks/01-eda.ipynb"
+OUT_DIR = Path(__file__).parent.parent / "figures"
 
 FIG_NAMES = {
-    8: ["fig_histograms.png"],        # Distribución de las variables del estudio
-    9: ["fig_scatter.png"],           # Distancia vs Duración
-    11: ["fig_corr.png"],             # Matriz de correlación
-    13: ["fig_dur_hour.png"],         # Duración mediana por hora de partida
-    14: ["fig_dur_weekday.png"],      # Duración mediana por día de la semana
-    16: ["fig_dur_geo.png"],          # Duración mediana según ubicación (recogida/llegada)
+    8: ["fig_histograms.png"],  # Distribución de las variables del estudio
+    9: ["fig_scatter.png"],  # Distancia vs Duración
+    11: ["fig_corr.png"],  # Matriz de correlación
+    13: ["fig_dur_hour.png"],  # Duración mediana por hora de partida
+    14: ["fig_dur_weekday.png"],  # Duración mediana por día de la semana
+    16: ["fig_dur_geo.png"],  # Duración mediana según ubicación (recogida/llegada)
 }
 
 
@@ -28,7 +28,8 @@ def main() -> None:
         pngs = [
             out["data"]["image/png"]
             for out in cell.get("outputs", [])
-            if out.get("output_type") == "display_data" and "image/png" in out.get("data", {})
+            if out.get("output_type") == "display_data"
+            and "image/png" in out.get("data", {})
         ]
         names = FIG_NAMES.get(cell_id)
         if names is None:
