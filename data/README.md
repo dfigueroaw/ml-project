@@ -4,6 +4,8 @@ NYC Yellow Taxi Trip Data (enero 2015). El archivo original (~1.9 GB, ~12.7 mill
 
 Fuente: [Kaggle - NYC Yellow Taxi Trip Data](https://www.kaggle.com/datasets/elemento/nyc-yellow-taxi-trip-data/)
 
+El dataset se encuentra bajo la licencia de [U.S. Government Works](https://www.usa.gov/government-copyright).
+
 ## Instrucciones de descarga
 
 1. Ir a <https://www.kaggle.com/datasets/elemento/nyc-yellow-taxi-trip-data/>.
