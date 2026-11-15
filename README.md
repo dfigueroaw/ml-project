@@ -15,7 +15,8 @@ Este es el repositorio para un proyecto de Machine Learning que utiliza el datas
 │   ├── README.md                instrucciones para descargar el dataset
 ├── figures/                     figuras exportadas del notebook
 ├── notebooks/
-│   └── 01-eda.ipynb             análisis exploratorio de datos
+│   ├── 01-eda.ipynb             análisis exploratorio de datos
+│   └── 02-model.ipynb           modelo de regresión lineal y evaluación
 ├── scripts/
 │   └── export_figures.py        script para extraer las figuras del notebook ejecutado
 ├── requirements.txt             dependencias del proyecto
