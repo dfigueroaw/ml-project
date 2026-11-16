@@ -16,7 +16,7 @@ Este es el repositorio para un proyecto de Machine Learning que utiliza el datas
 ├── figures/                     figuras exportadas del notebook
 ├── notebooks/
 │   ├── 01-eda.ipynb             análisis exploratorio de datos
-│   └── 02-model.ipynb           modelo de regresión lineal y evaluación
+│   └── 02-model.ipynb           modelos de regresión y comparación
 ├── scripts/
 │   └── export_figures.py        script para extraer las figuras del notebook ejecutado
 ├── requirements.txt             dependencias del proyecto
